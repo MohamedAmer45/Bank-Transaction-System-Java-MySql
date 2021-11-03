@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AccountPane" prefHeight="640.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.transaction.system.AccountTableController">
+   <children>
+      <Label fx:id="AccountTableLable" layoutX="383.0" layoutY="14.0" text="Account">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox fx:id="AccountVBox" layoutX="76.0" layoutY="90.0" prefHeight="460.0" prefWidth="760.0" style="-fx-background-color: grey;">
+         <children>
+            <TableView fx:id="AccountTable" prefHeight="476.0" prefWidth="760.0">
+              <columns>
+                <TableColumn fx:id="AccountNo" prefWidth="105.0" text="Account No" />
+                <TableColumn fx:id="DateCreated" minWidth="0.0" prefWidth="176.0" text="Date Created" />
+                  <TableColumn fx:id="Name" minWidth="0.0" prefWidth="144.0" text="Name" />
+                  <TableColumn fx:id="Balance" minWidth="0.0" prefWidth="149.0" text="Balance" />
+                  <TableColumn fx:id="AccountBranchID" minWidth="0.0" prefWidth="185.0" text="Branch ID" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

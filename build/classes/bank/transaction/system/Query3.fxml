@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Query3Pane" prefHeight="606.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.transaction.system.Query3Controller">
+   <children>
+      <Label fx:id="Query3TableLable" layoutX="157.0" layoutY="14.0" text="Elite Accounts And Their Senior Banker">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <VBox fx:id="Query3VBox" layoutX="76.0" layoutY="90.0" prefHeight="460.0" prefWidth="760.0" style="-fx-background-color: grey;">
+         <children>
+            <TableView fx:id="Query3Table" prefHeight="476.0" prefWidth="760.0">
+               <columns>
+                  <TableColumn fx:id="Query3EliteAccountNo" prefWidth="186.0" text="Elite Account No" />
+                  <TableColumn fx:id="Query3EmployeeName" minWidth="0.0" prefWidth="573.0" text="Employee Name" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

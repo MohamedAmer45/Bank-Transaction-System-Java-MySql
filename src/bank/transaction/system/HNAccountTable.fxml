@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="HighNetworkAccountPane" prefHeight="640.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.transaction.system.HNAccountTableController">
+   <children>
+      <Label fx:id="HighNetworkAccountTableLable" layoutX="255.0" layoutY="14.0" text="High Network Account">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox fx:id="HighNetworkAccountVBox" layoutX="76.0" layoutY="90.0" prefHeight="460.0" prefWidth="760.0" style="-fx-background-color: grey;">
+         <children>
+            <TableView fx:id="HighNetworkAccountTable" prefHeight="476.0" prefWidth="760.0">
+               <columns>
+                  <TableColumn fx:id="HighNetworkAccountNo" prefWidth="380.0" text="High Network Account No" />
+                  <TableColumn fx:id="BranchManagerEmployeeID" minWidth="0.0" prefWidth="379.0" text="Branch Manager Employee ID" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

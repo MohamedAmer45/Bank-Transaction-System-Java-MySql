@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Query2Pane" prefHeight="606.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.transaction.system.Query2Controller">
+   <children>
+      <Label fx:id="Query2TableLable" layoutX="76.0" layoutY="14.0" text="ATM Transactions In Ascending Order of Amount">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <VBox fx:id="Query2VBox" layoutX="76.0" layoutY="90.0" prefHeight="460.0" prefWidth="760.0" style="-fx-background-color: grey;">
+         <children>
+            <TableView fx:id="Query2Table" prefHeight="476.0" prefWidth="760.0">
+               <columns>
+                  <TableColumn fx:id="Query2TransactionID" prefWidth="116.0" text="Transaction ID" />
+                  <TableColumn fx:id="Query2TransactionAmount" minWidth="0.0" prefWidth="173.0" text="Transaction Amount" />
+                  <TableColumn fx:id="Query2TransactionDate" minWidth="0.0" prefWidth="268.0" text="Transaction Date" />
+                  <TableColumn fx:id="Query2ATMID" prefWidth="277.0" text="ATM ID" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

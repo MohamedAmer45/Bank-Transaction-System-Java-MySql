@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="EmployeePane" prefHeight="640.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.transaction.system.EmployeeController">
+   <children>
+      <Label fx:id="EmployeeLable" layoutX="370.0" layoutY="14.0" text="Employee">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox fx:id="EmployeeVBox" layoutX="76.0" layoutY="90.0" prefHeight="460.0" prefWidth="760.0" style="-fx-background-color: grey;">
+         <children>
+            <TableView fx:id="EmployeeTable" prefHeight="476.0" prefWidth="760.0">
+               <columns>
+                  <TableColumn fx:id="EmployeeID" prefWidth="138.0" text="Employee ID" />
+                  <TableColumn fx:id="EmployeeName" minWidth="0.0" prefWidth="445.0" text="Employee Name" />
+                  <TableColumn fx:id="EmployeeBranchID" minWidth="0.0" prefWidth="176.0" text="Branch ID" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

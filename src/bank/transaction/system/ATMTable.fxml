@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ATMPane" prefHeight="640.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.transaction.system.ATMTableController">
+   <children>
+      <Label fx:id="ATMTableLable" layoutX="414.0" layoutY="14.0" text="ATM">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox fx:id="ATMVBox" layoutX="76.0" layoutY="90.0" prefHeight="460.0" prefWidth="760.0" style="-fx-background-color: grey;">
+         <children>
+            <TableView fx:id="ATMTable" prefHeight="476.0" prefWidth="760.0">
+               <columns>
+                  <TableColumn fx:id="ATMID" prefWidth="138.0" text="ATM ID" />
+                  <TableColumn fx:id="ATMLocation" minWidth="0.0" prefWidth="467.0" text="ATM Location" />
+                  <TableColumn fx:id="ATMBranchID" minWidth="0.0" prefWidth="154.0" text="Branch ID" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

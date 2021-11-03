@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="TransactionPane" prefHeight="640.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.transaction.system.TransactionTableController">
+   <children>
+      <Label fx:id="TransactionTableLable" layoutX="355.0" layoutY="14.0" text="Transaction">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox fx:id="TransactionVBox" layoutX="76.0" layoutY="90.0" prefHeight="460.0" prefWidth="760.0" style="-fx-background-color: grey;">
+         <children>
+            <TableView fx:id="TransactionTable" prefHeight="476.0" prefWidth="760.0">
+               <columns>
+                  <TableColumn fx:id="TransactionID" prefWidth="86.0" text="Transaction ID" />
+                  <TableColumn fx:id="TransactionType" minWidth="0.0" prefWidth="160.0" text="Transaction Type" />
+                  <TableColumn fx:id="TransactionAmount" minWidth="0.0" prefWidth="147.0" text="Amount" />
+                  <TableColumn fx:id="TransactionTime" minWidth="0.0" prefWidth="106.0" text="Time" />
+                  <TableColumn fx:id="TransactionDate" minWidth="0.0" prefWidth="176.0" text="Date" />
+                  <TableColumn fx:id="ATMID" prefWidth="84.0" text="ATM ID" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
